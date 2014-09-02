@@ -57,9 +57,6 @@
 
 
 					<nav role="navigation">
-						<div class="contact">
-							<a href="mailto:oliverjohnbaker@gmail.com"> Want to know more? Email me. </a>
-						</div>
 						<?php wp_nav_menu(array(
     					'container' => false,                           // remove nav container
     					'container_class' => 'menu cf',                 // class of container (should you choose to use it)
@@ -82,7 +79,10 @@
 				
 				<div class="about-me">
 					<div class="wrap">
-						<?php echo get_field('about_text', '14') ?> <!--local id is 5-->
+						<?php echo get_field('about_text', '14') ?>
+						<span class="contact">
+							<a href="mailto:oliverjohnbaker@gmail.com?Subject=Hello" target="_top"> Want to know more? Email me. </a>
+						</span>
 					</div>
 				</div>
 

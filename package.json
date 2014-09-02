@@ -14,6 +14,8 @@
         "grunt-cssc":                   "*",
         "grunt-htmlhint":               "*",
         "grunt-autoprefixer":           "*",
-        "matchdep":                     "*"
+        "matchdep":                     "*",
+        "grunt-contrib-connect":        "*"
+
     }
 }

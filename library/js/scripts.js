@@ -112,6 +112,23 @@ jQuery(document).ready(function($) {
    * You can remove this if you don't need it
   */
   loadGravatars();
+  console.log('test');
 
+  var fixmeTop = $('.about-me').offset().top; // Get initial position
+  
+    $(window).resize(function(){
+	    fixmeTop = $('.about-me').offset().top; // Get initial position after resize
+    });
+  
+  	$(window).scroll(function() {            // Assign scroll event listener
+	    var currentScroll = $(window).scrollTop(); // Get current position
+	    if (currentScroll >= fixmeTop) { // Make it fixed if you've scrolled to it
+	    	$('.about-me').addClass('sticky');
+	    	$('#main').addClass('sticky-top');
+		} else {                       // Make it static if you scroll above
+	      	$('.about-me').removeClass('sticky');
+	      	$('#main').removeClass('sticky-top');
+		}
+	});
 
 }); /* end of as page load scripts */

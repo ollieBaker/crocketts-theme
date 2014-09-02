@@ -58,6 +58,9 @@ module.exports = function(grunt){
         },
 
         watch: {
+        	options: {
+                livereload: true,
+            },
             js: {
                 files: ['library/js/scripts.js', 'library/js/particle.js'],
                 tasks: ['concat','uglify']
@@ -65,6 +68,9 @@ module.exports = function(grunt){
             css: {
                 files: ['library/scss/**/*.scss'],
                 tasks: ['buildcss']
+            },
+            livereload: {
+                files: ['*.html', '*.php', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
             }
         },
 
@@ -86,9 +92,20 @@ module.exports = function(grunt){
             }
         }
 
+        // connect: {
+        //     server: {
+        //         options: {
+        //             open: 'http://localhost:8000/',
+        //             livereload: 35729,
+        //             hostname:'0.0.0.0',
+        //             base: '../../../../olliebaker'
+        //         }
+        //     }
+        // },
+
     });
 
-    grunt.registerTask('default',   []);
+    grunt.registerTask('default',   ['watch']);
     grunt.registerTask('buildcss',  ['sass', 'autoprefixer']);
 
 };

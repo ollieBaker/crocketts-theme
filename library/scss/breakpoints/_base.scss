@@ -915,10 +915,20 @@ PORTFOLIO GALLERY STYLES
 
 .contact {
 	position: relative;
-	background-color: rgba(255,255,255,0.75);
-	padding: 0.5em 0.75em 0.5em 0.75em;
+	background-color: ($light-gray);
 	border-radius: 8px;
 	margin-bottom: 1em;
+}
+
+.sticky-top {
+	margin-top: 8.3em;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
 }
 
 nav {
@@ -931,6 +941,7 @@ body {
 
 .about-me {
 	background-color: white;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 	div {
 		padding: 0.4em 0 0.4em 0;
 	}
