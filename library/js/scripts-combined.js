@@ -118,6 +118,7 @@ jQuery(document).ready(function($) {
   
     $(window).resize(function(){
 	    fixmeTop = $('.about-me').offset().top; // Get initial position after resize
+	    console.log('resize');
     });
   
   	$(window).scroll(function() {            // Assign scroll event listener

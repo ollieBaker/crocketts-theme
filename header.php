@@ -80,9 +80,9 @@
 				<div class="about-me">
 					<div class="wrap">
 						<?php echo get_field('about_text', '14') ?>
-						<span class="contact">
+						<p class="contact">
 							<a href="mailto:oliverjohnbaker@gmail.com?Subject=Hello" target="_top"> Want to know more? Email me. </a>
-						</span>
+						</p>
 					</div>
 				</div>
 

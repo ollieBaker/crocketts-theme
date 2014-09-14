@@ -106,7 +106,15 @@ you can add resource intensive styles.
 	@import "breakpoints/1030up";
 
 } // end of media query
+/*******
+Adding an extra break point to ensure there's always a margin around the content.
+*********/
+@media only screen and (min-width: 1080px) {
 
+	// styles in 1030up.scss
+	@import "breakpoints/1080up";
+
+} // end of media query
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

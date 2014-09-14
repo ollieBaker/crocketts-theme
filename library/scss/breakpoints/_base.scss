@@ -913,24 +913,6 @@ PORTFOLIO GALLERY STYLES
 	width: 100%;
 }
 
-.contact {
-	position: relative;
-	background-color: ($light-gray);
-	border-radius: 8px;
-	margin-bottom: 1em;
-}
-
-.sticky-top {
-	margin-top: 8.3em;
-}
-
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 99999;
-}
-
 nav {
 	position: relative;
 }
@@ -940,9 +922,30 @@ body {
 }
 
 .about-me {
+	transition: all 0.5s ease;
+	float: left;
+	display: block;
+	width: 100%;
 	background-color: white;
-	box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
-	div {
-		padding: 0.4em 0 0.4em 0;
+	box-shadow: -4px 4px 8px rgba(0,0,0,0.5);
+	margin-bottom: 1.5em;
+	p {
+		margin: .5em 0 .5em 0;
 	}
+}
+
+.contact {
+	background-color: ($light-gray);
+	border-radius: 8px;
+}
+
+.sticky-top {
+	margin-top: 104px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
 }
